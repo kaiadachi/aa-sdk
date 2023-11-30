@@ -39,7 +39,7 @@ export abstract class BaseSmartContractAccount<
 {
   protected factoryAddress: Address;
   protected deploymentState: DeploymentState = DeploymentState.UNDEFINED;
-  protected accountAddress?: Address;
+  public accountAddress?: Address;
   protected accountInitCode?: Hex;
   protected owner: SmartAccountSigner | undefined;
   protected entryPoint: GetContractReturnType<
